@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import PlayersList from "./PlayersList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        minHeight: "100vh",
+        backgroundColor: "#e9ecef",
+        paddingTop: "30px",
+      }}
+    >
+      <h1
+        style={{
+          textAlign: "center",
+          fontWeight: "bold",
+          marginBottom: "20px",
+          color: "#212529",
+        }}
+      >
+        FIFA Player Cards
+      </h1>
+
+      <PlayersList />
     </div>
   );
 }
